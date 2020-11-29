@@ -24,7 +24,7 @@
 
 | Column                 | Type       | Options                        | details        |
 | ---------------------- | ---------- | ------------------------------ | -------------- |
-| user_id                | references | null: false, foreign_key: true | 出品者         |
+| user                   | references | null: false, foreign_key: true | 出品者         |
 | name                   | string     | null: false                    | 商品名         |
 | info                   | text       | null: false                    | 商品の説明     |
 | price                  | integer    | null: false                    | 価格           |
@@ -41,10 +41,10 @@
 
 ## orders テーブル
 
-| Column  | Type       | Options                        | details  |
-| ------- | ---------- | ------------------------------ | -------- |
-| user_id | references | null: false, foreign_key: true | 購入者   |
-| item_id | references | null: false, foreign_key: true | 購入商品 |
+| Column | Type       | Options                        | details  |
+| ------ | ---------- | ------------------------------ | -------- |
+| user   | references | null: false, foreign_key: true | 購入者   |
+| item   | references | null: false, foreign_key: true | 購入商品 |
 
 ### Association
 
@@ -56,7 +56,7 @@
 
 | Column        | Type       | Options                        | details  |
 | ------------- | ---------- | ------------------------------ | -------- |
-| order_id      | references | null: false, foreign_key: true | 購入記録 |
+| order         | references | null: false, foreign_key: true | 購入記録 |
 | postal_code   | string     | null: false                    | 郵便番号 |
 | prefecture_id | integer    | null: false                    | 都道府県 |
 | city          | string     | null: false                    | 市区町村 |
