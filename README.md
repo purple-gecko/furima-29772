@@ -4,16 +4,16 @@
 
 ## users テーブル
 
-| Column          | Type   | Options     | details        |
-| --------------- | ------ | ----------- | -------------- |
-| name            | string | null: false | ニックネーム   |
-| email           | string | null: false | メールアドレス |
-| password        | string | null: false | パスワード     |
-| first_name      | string | null: false | 名字           |
-| first_name_kana | string | null: false | 名字のフリガナ |
-| last_name       | string | null: false | 名前           |
-| last_name_kana  | string | null: false | 名前のフリガナ |
-| birth_date      | date   | null: false | 生年月日       |
+| Column             | Type   | Options     | details        |
+| ------------------ | ------ | ----------- | -------------- |
+| name               | string | null: false | ニックネーム   |
+| email              | string | null: false | メールアドレス |
+| encrypted_password | string | null: false | パスワード     |
+| first_name         | string | null: false | 名字           |
+| first_name_kana    | string | null: false | 名字のフリガナ |
+| last_name          | string | null: false | 名前           |
+| last_name_kana     | string | null: false | 名前のフリガナ |
+| birth_date         | date   | null: false | 生年月日       |
 
 ### Association
 
