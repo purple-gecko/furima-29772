@@ -62,7 +62,7 @@
 | city          | string     | null: false                    | 市区町村 |
 | addresses     | string     | null: false                    | 番地     |
 | building      | string     |                                | 建物名   |
-| phone_number  | integer    | null: false                    | 電話番号 |
+| phone_number  | string     | null: false                    | 電話番号 |
 
 ### Association
 
